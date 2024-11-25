@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./image/Group 2.png" type="image/x-icon">
+</head>
+<body>
+     <div class="loader-body"> <span class="loader">Loading</span>
+    </div> 
+    <div class="site">
+        <div class="allert"></div>
+        <header>
+            <nav class="container">
+                <div class="nav-top">
+                    <p><i class="fa-solid fa-location-dot"></i> <select  id="select">
+                       <option value="Москва">Москва</option> 
+                       <option value="Москва">Москва</option> 
+                       <option value="Москва">Москва</option> 
+                    </select>
+                    </p>
+                    <p>Проверить адрес</p>
+                    <p>Среднее время доставки*:
+                       <!-- <span class="timer">00:30:00</span> -->
+                        
+                            <span class="clock">00</span>:
+                            <span class="minut">--</span>:
+                            <span class="second">--</span>
+                        
+
+                    </p>
+                   
+                </div>
+                <div class="nav-time">
+                    <p>Время работы: с 11:00 до 23:00</p>
+                   <a href="#" class="user"><i class="fa-regular fa-user"></i>Войти в аккаунт</a>
+                   <a href="#" class="my-user"> <i class="fa-regular fa-user"></i>Мой аккаунт</a>
+                   <div class="my-account">
+                    <a href="#">100 бонусов</a>
+                    <a href="#">История заказов</a>
+                    <a href="#">Настройки</a>
+                    <a href="#">Выход из аккаунта</a>
+                   </div>
+                </div>
+            </nav>
+            <div class="line"></div>
+            <div class="navbar container">
+                <div class="logo">
+                    <img src="./image/Group 2.png" alt="">
+                    <h3>Куда пицца</h3>
+                </div>
+                
+                    <ul class="items">
+                        <li class="link-item"><a href="">Акции</a></li>
+                        <li class="link-item"><a href="">Пицца</a></li>
+                        <li class="link-item"><a href="">Суши</a></li>
+                        <li class="link-item"><a href="">Напитки</a></li>
+                        <li class="link-item"><a href="">Закуски</a></li>
+                        <li class="link-item"><a href="">Комбо</a></li>
+                        <li class="link-item"><a href="">Десерты</a></li>
+                        <li class="link-item"><a href="">Соусы</a></li>
+                         <li class="link-item-drug">Другое<i class="fa-solid fa-angle-down"></i>
+                            <ul class="drugoe">
+                                <li><a href="">Акции</a></li>
+                                <li><a href="">О компании</a></li>
+                                <li><a href="">Пользовательское соглашение</a></li>
+                                <li><a href="">Условия гарантии</a></li>
+                                <li><a href="">Ресторан</a></li>
+                                <li><a href="">Контакты</a></li>
+                                <li><a href="">Поддержка</a></li>
+                                <li><a href="">Отследить заказ</a></li>
+                            </ul>
+                        </li> 
+                    </ul>
+               
+                
+                <div class="logotip">
+                    <button><i class="fa-solid fa-cart-shopping"></i><span>0</span></button>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i><span>0</span> ₽</a>
+                </div>
+                <button class="bars" >
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                    <span class="bar3"></span>
+                </button>
+                <div class="menu">
+                    <a href="#" class="user-bars"><i class="fa-regular fa-user"></i>Войти в аккаунт</a>
+                    <a href="#" class="my-user"> <i class="fa-regular fa-user"></i>Мой аккаунт</a>
+                    <div class="my-account">
+                     <a href="#">100 бонусов</a>
+                     <a href="#">История заказов</a>
+                     <a href="#">Настройки</a>
+                     <a href="#">Выход из аккаунта</a>
+                    </div>
+                    <ul class="menu-box">
+                        <li><a href="">Акции</a></li>
+                        <li><a href="">О компании</a></li>
+                        <li><a href="">Пользовательское соглашение</a></li>
+                        <li><a href="">Условия гарантии</a></li>
+                        <li><a href="">Ресторан</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Поддержка</a></li>
+                        <li><a href="">Отследить заказ</a></li>
+                    </ul>
+                    <div class="menu-info">
+                        <p><i class="fa-solid fa-phone"></i>+7 (926) 223-10-11</p>
+                        <p><i class="fa-solid fa-location-dot"></i>Москва, ул. Юных Ленинцев, д.99</p>
+                        <p><i class="fa-brands fa-facebook"></i>Facebok <i class="fa-brands fa-instagram"></i> Instagram</p>
+                    </div>
+
+                    <span>Время работы: с 11:00 до 23:00</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero container">
+            <div class="hero-menu">
+                <div class="active">
+                    <img src="./image/Fire.png" alt="">
+                    <a href="#">Акции</a>
+                </div>
+                <div>
+                    <img src="./image/Pizza.png" alt="">
+                    <a href="#Пицца">Пицца</a>
+                </div>
+                <div>
+                    <img src="./image/Sushi.png" alt="">
+                    <a href="">Суши</a>
+                </div>
+                <div>
+                    <img src="./image/Drink.png" alt="">
+                    <a href="">Напитки</a>
+                </div>
+                <div>
+                    <img src="./image/Snacks.png" alt="">
+                    <a href="">Закуски</a>
+                </div>
+                <div>
+                    <img src="./image/Combo.png" alt="">
+                    <a href="">Комбо</a>
+                </div>
+                <div>
+                    <img src="./image/Group 104.png" alt="">
+                    <a href="">Десерты</a>
+                </div>
+                <div>
+                    <img src="./image/Sauce.png" alt="">
+                    <a href="">Соусы</a>
+                </div>      
+            </div>
+            <div class="pic-menu">
+                <div class="pic-box">
+                    <img src="./image/Group 737.png" alt="">
+                    <p>3 средние пиццы <br>
+                        от 999 рублей</p>
+                </div>
+                <div class="pic-box">
+                    <img src="./image/Group 738.png" alt="">
+                    <p>Кэшбек 10% на <br>
+                         самовывоз (доставка)</p>
+                </div>
+                
+                <div class="pic-box">
+                    <img src="./image/Group 737.png" alt="">
+                    <p>3 средние пиццы <br>
+                        от 999 рублей</p>
+                </div>
+                <div class="pic-box">
+                    <img src="./image/Group 738.png" alt="">
+                    <p>Кэшбек 10% на <br>
+                         самовывоз (доставка)</p>
+                </div>
+               
+            </div>
+        </section>
+
+        <section class="proverit container">
+           <div class="prover">
+            <div>
+                <p>Проверить адрес доставки</p>
+                <span><i class="fa-solid fa-location-dot"></i>Адрес</span>
+            </div>
+            <button><span>Проверить</span><i class="fa-solid fa-location-arrow"></i></button>
+           </div>
+        </section>
+
+        <section class="pitsa container">
+            <div class="pitsa-logo">
+                <h2>Пицца</h2>
+                <a href="#"><i class="fa-solid fa-filter"></i>Фильтры</a>
+            </div>
+            <div class="zakaz">
+                <div class="zakaz-box">
+                    <span class="new">NEW</span>
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (39).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Чикен Сладкий Чили</h4>
+                        <p>Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соу...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">399</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                            </button>
+                            <p><span class="summa-bir">399</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <span class="hit">ХИТ</span>
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (40).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>EASY PEASY огуречный расколбас</h4>
+                        <p>Курица, Лук, Перец Халапеньо...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">549</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">549</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (41).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>EASY PEASY чикен а-ля хрен</h4>
+                        <p>Курица, Лук, Соус Карбонара,...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">249</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">249</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (42).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>4 сезона</h4>
+                        <p>Бекон, Ветчина, Грибы, Курица, Лук, Маслины, Огурцы мари...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">630</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">630</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (42).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>4 сезона</h4>
+                        <p>Бекон, Ветчина, Грибы, Курица, Лук, Маслины, Огурцы мари...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa"></span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">630</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (41).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>EASY PEASY чикен а-ля хрен</h4>
+                        <p>Курица, Лук, Соус Карбонара,...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">249</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">249</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (39).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Чикен Сладкий Чили</h4>
+                        <p>Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соу...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">399</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">399</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (40).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>EASY PEASY огуречный расколбас</h4>
+                        <p>Курица, Лук, Перец Халапеньо...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">549</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">549</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <section class="pitsa container">
+            <div class="pitsa-logo">
+                <h2>Суши</h2>
+                <a href="#"><i class="fa-solid fa-filter"></i>Фильтры</a>
+            </div>
+            <div class="zakaz">
+                <div class="zakaz-box">
+                    <span class="new">NEW</span>
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (43).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Филадельфия кранч</h4>
+                        <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">475</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                            </button>
+                            <p><span class="summa-bir">475</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <span class="hit">ХИТ</span>
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (44).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Филадельфия крем-брюле</h4>
+                        <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">395</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">395</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (45).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Супер Филадельфия</h4>
+                        <p>Действительно много семги, сливочный сыр, огурец, рис, н...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">425</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">425</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (46).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Тигр мама</h4>
+                        <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">525</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">525</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (46).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Тигр мама</h4>
+                        <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">525</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                               
+                            </button>
+                            <p><span class="summa-bir">525</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (45).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Супер Филадельфия</h4>
+                        <p>Действительно много семги, сливочный сыр, огурец, рис, н...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">425</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">425</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (43).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Филадельфия кранч</h4>
+                        <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">475</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                               
+                            </button>
+                            <p><span class="summa-bir">475</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (44).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Филадельфия крем-брюле</h4>
+                        <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">395</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">395</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pitsa container">
+            <div class="pitsa-logo">
+                <h2>Закуски</h2>
+            </div>
+            <div class="zakaz">
+                <div class="zakaz-box">
+                    <span class="new">NEW</span>
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (47).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Филадельфия кранч</h4>
+                        <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">475</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">475</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <span class="hit">ХИТ</span>
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (48).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Филадельфия крем-брюле</h4>
+                        <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">395</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                               
+                            </button>
+                            <p><span class="summa-bir">395</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (49).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Супер Филадельфия</h4>
+                        <p>Действительно много семги, сливочный сыр, огурец, рис, н...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">425</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">425</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (50).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Тигр мама</h4>
+                        <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">525</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">525</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (50).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Тигр мама</h4>
+                        <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">525</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                               
+                            </button>
+                            <p><span class="summa-bir">525</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (49).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Супер Филадельфия</h4>
+                        <p>Действительно много семги, сливочный сыр, огурец, рис, н...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">425</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">425</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (51).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Филадельфия крем-брюле</h4>
+                        <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">395</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">395</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (51).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Филадельфия крем-брюле</h4>
+                        <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">475</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">475</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pitsa container">
+            <div class="pitsa-logo">
+                <h2>Десерты</h2>
+            </div>
+            <div class="zakaz">
+                <div class="zakaz-box">
+                    <span class="new">NEW</span>
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (52).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Филадельфия кранч</h4>
+                        <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">475</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                               
+                            </button>
+                            <p><span class="summa-bir">475</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <span class="hit">ХИТ</span>
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (53).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Филадельфия крем-брюле</h4>
+                        <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">395</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">395</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (54).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Супер Филадельфия</h4>
+                        <p>Действительно много семги, сливочный сыр, огурец, рис, н...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">425</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">425</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (55).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Тигр мама</h4>
+                        <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">525</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">525</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (55).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Тигр мама</h4>
+                        <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">525</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                               
+                            </button>
+                            <p><span class="summa-bir">525</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (56).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Филадельфия крем-брюле</h4>
+                        <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">395</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">395</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (57).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Филадельфия кранч</h4>
+                        <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">475</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">475</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (54).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Супер Филадельфия</h4>
+                        <p>Действительно много семги, сливочный сыр, огурец, рис, н...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">425</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">425</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pitsa container">
+            <div class="pitsa-logo">
+                <h2>Напитки</h2>
+            </div>
+            <div class="zakaz">
+                <div class="zakaz-box">
+                    <span class="new">NEW</span>
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (58).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Филадельфия кранч</h4>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">475</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                               
+                            </button>
+                            <p><span class="summa-bir">475</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <span class="hit">ХИТ</span>
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (59).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Филадельфия крем-брюле</h4>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">395</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">395</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (60).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Супер Филадельфия</h4>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">425</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">425</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (61).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Тигр мама</h4>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">525</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                               
+                            </button>
+                            <p><span class="summa-bir">525</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (62).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Супер Филадельфия</h4>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">525</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">525</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (63).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Тигр мама</h4>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">525</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">525</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (58).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Супер Филадельфия</h4>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">425</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                               
+                            </button>
+                            <p><span class="summa-bir">425</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (59).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Тигр мама</h4>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">525</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                               
+                            </button>
+                            <p><span class="summa-bir">525</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pitsa container">
+            <div class="pitsa-logo">
+                <h2>Соусы</h2>
+            </div>
+            <div class="zakaz">
+                <div class="zakaz-box">
+                    <span class="new">NEW</span>
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (64).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Филадельфия кранч</h4>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">475</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">475</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <span class="hit">ХИТ</span>
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (65).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4></h4>
+                        <p></p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">395</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                               
+                            </button>
+                            <p><span class="summa-bir">395</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (66).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Супер Филадельфия</h4>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">425</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">425</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (67).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Тигр мама</h4>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">525</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">525</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (65).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4></h4>
+                        <p></p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">395</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">395</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (67).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Тигр мама</h4>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">525</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">525</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (66).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Супер Филадельфия</h4>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">425</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">425</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (64).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Филадельфия кранч</h4>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">475</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">475</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pitsa container">
+            <div class="pitsa-logo">
+                <h2>Комбо</h2>
+            </div>
+            <div class="zakaz">
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (68).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Филадельфия кранч</h4>
+                        <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">475</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">475</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (69).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Филадельфия крем-брюле</h4>
+                        <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">395</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">395</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (70).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Супер Филадельфия</h4>
+                        <p>Действительно много семги, сливочный сыр, огурец, рис, н...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">425</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                               
+                            </button>
+                            <p><span class="summa-bir">425</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (71).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Тигр мама</h4>
+                        <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">525</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">525</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (69).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Филадельфия крем-брюле</h4>
+                        <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">395</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">395</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (68).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Филадельфия кранч</h4>
+                        <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">475</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">475</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (71).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Тигр мама</h4>
+                        <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">525</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">525</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zakaz-box">
+                    <div class="img-box">
+                        <img src="./image/Rectangle 4 (70).png" alt="">
+                    </div>
+                    <div class="zakaz-info">
+                        <h4>Супер Филадельфия</h4>
+                        <p>Действительно много семги, сливочный сыр, огурец, рис, н...</p>
+                        <div class="info-chek">
+                            <button class="vib-btn">Выбрать</button>
+                            <p>от <span class="summa">425</span> ₽</p>
+                        </div>
+                        <div class="schet">
+                            <button class="chet-btn">
+                                <span class="min">-</span>
+                                <span class="dona">1</span>
+                                <span class="max">+</span>
+                                
+                            </button>
+                            <p><span class="summa-bir">425</span>₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <section class="dostavka container">
+            <div>
+                <h3>Доставка пиццы в Москве</h3>
+                <p>Захотелось чего-то вкусного и сытного? Желание простое и понятное, только в холодильнике все не то, и до магазина идти лень. Все пропало? Нет. Недорого заказать пиццу в Москве очень просто! Вам на помощь спешит супергерой – Domino’s Pizza! Как у всякого супергероя, у Domino’s Pizza есть свои суперсилы: восхитительный вкус продукции из отборных ингредиентов; широкий ассортимент, включающий легендарные, фирменные и классические виды, для вегетарианцев и любителей экспериментировать; быстрая и бесплатная доставка пиццы в течение 30 минут, чтобы вкусное и ароматное блюдо не успевало остыть.</p>
+                <h4>Как сделать заказ</h4>
+                <p>Доставка пиццы от Domino’s – это когда Вам не нужно никуда ехать или звонить, ведь есть Интернет. Никогда еще заказ пиццы на дом в Москве не был таким простым! Чтобы заказать пиццу онлайн, Вам необходимо: выбрать понравившийся вариант и количество порций; положить желаемое в «Корзину»; не уходить далеко, так как вкусная пицца на заказ с доставкой уже мчится к Вам из ближайшей пиццерии Domino’s. И не забудьте оплатить заказ курьеру!</p>
+                <span>Показать полностью</span>
+            </div>
+        </section>
+
+        <footer class="footer container">
+            <div class="footer-links">
+                <div class="foot-img">
+                    <img src="./image/Group 61 (3).png" alt="">
+                </div>
+                <ul>
+                    <li><h4>Куда пицца</h4></li>
+                    <li><a href="">О компании</a></li>
+                    <li><a href="">Пользовательское соглашение</a></li>
+                    <li><a href="">Условия гарантии</a></li>
+                </ul>
+                <ul>
+                    <li><h4>Помощь</h4></li>
+                    <li><a href="">Ресторан</a></li>
+                    <li><a href="">Контакты</a></li>
+                    <li><a href="">Поддержка</a></li>
+                    <li><a href="">Отследить заказ</a></li>
+                </ul>
+                <ul>
+                    <li><h4>Контакты</h4></li>
+                    <li><p><i class="fa-solid fa-phone"></i>+7 (926) 223-10-11</p></li>
+                    <li><p><i class="fa-solid fa-location-dot"></i>Москва, ул. Юных Ленинцев, д.99</p></li>
+                    <li><p><i class="fa-brands fa-facebook"></i>Facebok <i class="fa-brands fa-instagram"></i>Instagram</p></li>
+                </ul>
+            </div>
+            <div>
+                <p>© Copyright 2021 — Куда Пицца</p>
+            </div>
+        </footer>
+      
+           
+      
+    </div>
+
+    <div class="about">
+               
+        <div>
+            <i class="fa-solid fa-xmark"></i>
+            <h2>Вход в аккаунт</h2>
+            <h4>Сможете быстро оформлять заказы, <br>
+                использовать бонусы</h4>
+                <span>Номер телефона</span>
+                <input type="tell" value="" id="tell">
+                <a href="#">Войти</a>
+                <p>Продолжая, вы соглашаетесь со сбором и <br> обработкой персональных данных и <br> пользовательским соглашением</p>
+        </div>
+    </div>
+    <div class="kod">
+       
+        <div>
+            <i class="fa-solid fa-xmark"></i>
+            <h2>Код из смс</h2>
+            <p>На номер +7 (926) 223-10-11</p>
+            <input type="password"  id="password">
+            <a href="#" class="vhod">Войти</a>
+            <p>Отправить код ещё раз через:
+               <span>59 секунд</span> </p>
+               <button>Отправить</button>
+        </div>
+    </div>
+
+    <div class="shop-box">
+        <div class="pokupki">
+            <div class="shop-logo">
+                <h2>Ваш заказ</h2>
+                <p><i class="fa-solid fa-xmark"></i></p>
+            </div>
+            <div class="pokupki-box"></div>
+            <div class="pokupka-end">
+                <button>Итого: <span class="itog"></span> ₽</button>
+                <a href="#">Оформить заказ</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1401 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+ul, li{
+    list-style: none;
+}
+.loader-body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f6f6f6;
+    z-index: 9999;
+}
+
+.loader {
+    font-size: 48px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #FF3D00;
+    letter-spacing: 2px;
+    position: relative;
+    bottom: 70px;
+}
+.loader::after {
+    content: 'Loading';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    animation: animloader 4s ease-in infinite;
+}
+
+@keyframes animloader {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+.site{
+    max-width: 1680px;
+    /* border: 1px solid; */
+    margin: 0 auto;
+    /* height: 200vh; */
+    background: #f6f6f6;
+    position: relative;
+    
+}
+/*  ====== ALLERT ============================= */
+.allert{
+    width: 500px;
+    height: 250px;
+    background: rgb(200, 240, 130);
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    z-index: 999999999;
+    padding: 50px;
+    color: #FF7010;
+    font-size: 36px;
+    font-weight: 700;
+    display: none;
+}
+.container{
+    padding: 10px 10%;
+}
+header{
+    padding: 10px 0;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+nav .nav-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.nav-top p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #191919;
+}
+.nav-top p select{
+    border: none;
+}
+.nav-top p span{
+    font-weight: 800;
+}
+.nav-top p i{
+    font-size: 20px;
+    color: #FF7010;
+}
+.nav-time{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.nav-time a i{
+    font-size: 20px;
+    color: #FF7010;
+    padding-right: 10px;
+}
+.nav-time  a{
+    color: #191919;
+}
+.nav-time .my-user{
+    display: none;
+    position: relative;
+}
+.nav-time .my-user:hover ~ .my-account{
+    display: block !important;
+}
+
+.nav-time .my-account{
+    width: 285px;
+    height: 206px;
+    border-radius: 20px;
+    border: 1px solid #F0F0F0;
+    box-shadow:0 0 10px #19191970;
+    padding:20px 30px;
+    background: #fff;
+    position: absolute;
+    top: 55px;
+    right: 5%;
+    z-index: 9999999;
+    display: none;
+    transition: .3s ease-in-out;
+}
+
+.nav-time .my-account a{
+    display: block;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #191919;
+}
+.nav-time .my-account a:nth-of-type(1){
+    color: #FF7010;
+}
+.nav-time .my-account a:nth-of-type(4){
+    color: #A5A5A5;
+}
+
+
+
+/* ===== line ====================================== */
+.line{
+    width: 100%;
+    height: 1px;
+    background: #F0F0F0;
+    /* background: #191919;
+    opacity: .1; */
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+    background: #ffffff;
+    z-index: 100;
+    
+}
+.navbar .logo{
+    display: flex;
+    align-items: center;
+}
+.navbar .logo h3{
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+/* ===== ITEMS =====================================*/
+.items{
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    /* display: none; */
+    
+}
+.items .link-item a{
+    color: #191919;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+}
+.items .link-item a:hover::before{
+    width: 100%;
+}
+.items .link-item a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #FF7010;
+    transition: .5s ease-in-out; 
+}
+.items .link-item i{
+    color: #191919;
+    padding-left: 10px;
+    
+}
+.items .link-item-drug{
+    position: relative;
+}
+/* ===== drugoe ===============================*/
+
+.drugoe{
+    position: absolute;
+    top: 110%;
+    left: -80%;
+    width: 285px;
+    height: 334px;
+    border: 1px solid #d7d7d7;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px gray;
+    z-index: 100;
+    display: none;
+}
+.drugoe li{
+    padding: 8px 0;
+}
+.drugoe li a{
+    color: #191919;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+}
+.drugoe li a:hover::before{
+    width: 100%;
+}
+.drugoe li a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #FF7010;
+    transition: .5s ease-in-out;
+}
+
+/* ===== ===========================================*/
+.navbar .logotip{
+    background: #FF7010;
+    padding: 8px 16px;
+    border-radius: 4px;
+    
+}
+.navbar .logotip button{
+    display: none;
+}
+
+.navbar .logotip a{
+    color: #fff;
+    font-size: 16px;
+}
+.navbar .logotip a span{
+    font-size: 18px;
+    padding-left: 10px;
+    
+}
+
+
+
+/* ==== bars =============================*/
+
+.bars{
+    border: none;
+    background: none;
+    display: none;
+    z-index: 10000;
+}
+.bar1{
+    display: block;
+    width: 35px;
+    height: 2px;
+    background: #191919;
+    border-radius: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.bar2{
+    display: block;
+    width: 35px;
+    height: 2px;
+    background: #191919;
+    border-radius: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.bar3{
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #191919;
+    border-radius: 5px;
+    margin: 6px 0;
+}
+.change .bar1{
+    transform:  rotate(-50deg) translate(-8px, 6px);
+   
+}
+.change .bar2{
+    transform:  rotate(50deg) translate(2px, 2px);
+}
+.change .bar3{
+    opacity: 0;
+}
+
+/* ===== menu ==============================*/
+
+.menu{
+    position: absolute;
+    top: 100%;
+    left:0;
+    width: 100%;
+    border: 1px solid #F0F0F0;
+    background: #FFFFFF;
+    display: none;
+    z-index: 1000;
+   
+}
+.menu .user-bars{
+    display: block;
+    padding: 20px 30px;
+    font-size: 16px;
+    color: #000000;
+}
+.menu .user-bars i{
+    font-size: 24px;
+    color: #FF7010;
+    padding-right: 20px;
+}
+.menu .my-user{
+    display: none;
+    position: relative;
+    color: #191919;
+    padding: 20px 30px;
+}
+.menu .my-user i{
+    font-size: 24px;
+    color: #FF7010;
+    padding-right: 20px;
+}
+.menu .my-user:hover + .my-account{
+    display: block;
+}
+
+.menu .my-account{
+    width: 285px;
+    height: 206px;
+    border-radius: 20px;
+    border: 1px solid #F0F0F0;
+    box-shadow:0 0 10px #19191970;
+    padding:20px 30px;
+    background: #fff;
+    position: absolute;
+    top: 50px;
+    left: 5%;
+    z-index: 9999999;
+    display: none;
+}
+
+.menu .my-account a{
+    display: block;
+    padding: 10px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #191919;
+}
+.menu .my-account a:nth-of-type(1){
+    color: #FF7010;
+}
+.menu .my-account a:nth-of-type(4){
+    color: #A5A5A5;
+}
+.menu .menu-box{
+    padding: 20px 30px;
+    border: 1px solid #F0F0F0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu .menu-box li a{
+    font-size: 16px;
+    color: #000000;
+    position: relative;
+}
+.menu .menu-box li a:hover::before{
+    width: 100%;
+   
+}
+.menu .menu-box li a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #FF7010;
+    transition: .5s ease-in-out;
+}
+.menu .menu-info{
+    padding: 20px 0;
+}
+.menu-info p{
+    padding: 10px 30px;
+    font-size: 16px;
+    color: #191919;
+}
+.menu-info p i{
+    font-size: 20px;
+    color: #FF7010;
+    padding-right: 10px;
+}
+.menu-info p .fa-instagram{
+    padding-left: 20px;
+}
+.menu span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 20px 0;
+    border-top: 1px solid #F0F0F0;
+}
+.close{
+    display: block;
+    
+}
+
+/* ===== hero ============================= */
+
+.hero{
+    padding: 30px 10%;
+    
+}
+.hero .hero-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hero .hero-menu div{
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.hero .hero-menu div:hover img,
+.hero .hero-menu div:hover a{
+    transform: scale(1.1);
+}
+.hero .hero-menu .active a{
+   color: #E23535;
+}
+.hero .hero-menu div a{
+    display: block;
+    font-size: 18px;
+    padding-top: 10px;
+    color: #000000;
+    transition: .3s ease-in-out;
+}
+.hero .hero-menu div img{
+    transition: .3s ease-in-out;
+}
+.pic-menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 50px 0;
+}
+.pic-menu .pic-box{
+    width: 300px;
+    height: 343px;
+    border-radius: 10px;
+    position: relative;
+}
+.pic-menu .pic-box img{
+    width: 300px;
+}
+
+.pic-menu .pic-box p{
+    position: absolute;
+    bottom:20px;
+    left: 20px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+}
+/* ====== proverit ============================ */
+.prover{
+    position: relative;
+    border: 1px solid #F0F0F0;
+    background: #fff;
+    padding: 20px 0;
+}
+.proverit div{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    
+}
+.proverit div p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.proverit div span{
+    font-size: 16px;
+    font-weight: 400;
+    color: #A5A5A5;
+}
+.proverit div span i{
+    font-size: 18px;
+    color: #FF7010;
+}
+.proverit button{
+    width: 150px;
+    height: 48px;
+    border: none;
+    background: #FF7010;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #FF7010;
+    position: absolute;
+    right:0;
+    top: 10px;
+}
+.proverit button span{
+    color: #ffffff;
+}
+.proverit button i{
+    display: none;
+}
+
+
+/* ===== pitsa ========================*/
+.pitsa{
+  margin: 50px 0;
+}
+.pitsa-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h2{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    color: #191919;
+}
+.pitsa-logo a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #191919;
+}
+.pitsa-logo a i{
+    color: #FF7010;
+    padding-right: 10px;
+}
+.zakaz{
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+    
+}
+.zakaz-box{
+    width: 300px;
+    border: 1px solid #F0F0F0;
+    background: #fff;
+    border-radius: 12px;
+    position: relative;
+    margin: 20px 10px;
+}
+.zakaz-box .new{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 65px;
+    height: 32px;
+    background: #E23535;
+    border-radius: 0 6px 6px 0;
+    padding: 7px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+.zakaz-box .hit{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 65px;
+    height: 32px;
+    background: #E23535;
+    border-radius: 0 6px 6px 0;
+    padding: 7px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+.zakaz-box .img-box{
+    width: 300px;
+}
+.zakaz-box .img-box img{
+    width: 100%;
+}
+.zakaz-box .zakaz-info{
+    padding: 20px;
+}
+.zakaz-box .zakaz-info h4{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #191919;
+    padding: 10px 0;
+}
+.zakaz-box .zakaz-info p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+.zakaz-box .zakaz-info .info-chek{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 10px 0;
+}
+.zakaz-box .zakaz-info .info-chek .vib-btn{
+    /* width: 131px; */
+    border: none;
+    background: #FF7010;
+    padding: 13px 32px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #FF7010;
+    transition: .3s ease-in;
+}
+.zakaz-box .zakaz-info .info-chek .vib-btn:hover{
+    border: 1px solid #FF7010;
+    color: #FF7010;
+    background: #fff;
+}
+.zakaz-box .zakaz-info .info-chek p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #FF7010;
+}
+.zakaz-info .schet{
+    display: none;
+}
+
+
+/* ==== dostavka ============================== */
+.dostavka{
+    margin: 50px 0;
+}
+.dostavka div{
+    width: 70%;
+    margin: auto;
+}
+.dostavka div h3{
+    font-size: 32px;
+    font-weight: 600;
+    color: #191919;
+    padding-bottom: 20px;
+}
+.dostavka div p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px 0;
+}
+.dostavka div h4{
+    font-size: 16px;
+    font-weight: 700;
+    color: #191919;
+    padding-top: 30px;
+}
+.dostavka div span{
+    font-size: 16px;
+    font-weight: 600;
+    color: #FF7010;
+    padding: 20px 0;
+}
+
+/* ============ foooter ============================= */
+.footer{
+    margin: 30px 0;
+}
+.footer-links{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.footer-links ul li{
+    padding: 10px 0;
+}
+.footer-links ul li h4{
+   font-size: 20px;
+   font-weight: 600;
+}
+.footer-links ul li a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #191919;
+    position: relative;
+}
+.footer-links ul li a:hover::before{
+    width: 100%;
+   
+}
+.footer-links ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #FF7010;
+    transition: .5s ease-in-out;
+}
+
+.footer-links ul li p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.footer-links ul li p i{
+    font-size: 20px;
+    color: #FF7010;
+    padding-right: 10px;
+}
+.footer-links ul li p .fa-instagram{
+    padding-left: 20px;
+}
+
+
+/* ==== about ===================================== */
+
+
+ .about{
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 100vh;
+   background: #1919192f;
+   backdrop-filter: blur(8px);
+   display: none;
+   z-index: 100000;
+}
+
+.about div{
+    margin: 200px auto;
+    width: 50%;
+    border-radius: 24px;
+    background: #F9F9F9;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    
+}
+.about  div .fa-xmark{
+    position: absolute;
+    top: -5%;
+    right: -10%;
+    font-size: 40px;
+    color: #fff;
+}
+
+.about div h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: #191919;
+}
+.about div h4{
+    font-size: 16px;
+    font-weight: 400;
+    color: #191919;
+    text-align: center;
+}
+.about div span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #A5A5A5;
+    text-align: left;
+}
+.about div input{
+    width: 45%;
+    height: 48px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid dodgerblue;
+    padding: 10px;
+}
+
+.about div a{
+    display: block;
+    width: 45%;
+    height: 48px;
+    border-radius: 6px;
+    background: #FF7010;
+    border: none;
+    padding: 13px 40px;
+    color: #fff;
+    text-align: center;
+}
+.about div p{
+   font-size: 14px;
+   font-weight: 400;
+   color: #191919;
+   text-align: center;
+   line-height: 18px;
+}
+.close{
+    display: block;
+}
+
+/* ====== kod ======================================*/
+
+.kod{
+    width: 100%;
+    height: 100vh;
+    background: rgba(1, 1, 1, 0.651);
+    backdrop-filter: blur(8px);
+    z-index: 1000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+
+.kod div{
+    width: 50%;
+    border-radius: 24px;
+    background: #F9F9F9;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 250px auto;
+    position: relative;
+    
+}
+.kod div .fa-xmark{
+    position: absolute;
+    top: -5%;
+    right: -10%;
+    font-size: 40px;
+    color: #fff;
+}
+.kod div h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: #191919;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #191919;
+}
+input{
+    width: 240px;
+    height: 48px;
+    color: #A5A5A5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid dodgerblue;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: #000000;
+   
+    
+}
+
+.vhod{
+    width: 30%;
+    display: block;
+    height: 48px;
+    border-radius: 6px;
+    background: #FF7010;
+    border: none;
+    padding: 13px 20px;
+    color: #fff;
+    text-align: center;
+}
+.kod div p span{
+    color: #A5A5A5;
+}
+.kod button{
+    width: 180px;
+    height: 48px;
+    border: 1px solid #FF7010;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #FF7010;
+    display: none;
+}
+
+/* ====== shop-box =========================== */
+
+.shop-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000000b3;
+    backdrop-filter:blur(8px);
+    z-index: 9999999;
+    display: none;
+}
+.shop-box .pokupki{
+    width: 500px;
+    height: 100vh;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 50px 30px ;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pokupki .shop-logo{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 500px;
+    padding: 30px 30px 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    z-index: 100;
+}
+.pokupki .shop-logo h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: #000000;
+}
+.pokupki .shop-logo i{
+    font-size: 32px;
+}
+.pokupki-box{
+    width: 100%;
+    margin-top: 50px;
+    
+}
+.pokupka-end{
+    position: fixed;
+    bottom: 0px;
+    right: 0;
+   width: 500px;
+   height: 100px;
+   background: #FFF;
+    background: #fff;
+    padding: 40px 30px 80px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pokupka-end button{
+    border: none;
+    background: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FF3D00;
+}
+.pokupka-end a{
+    display: block;
+    padding: 13px 24px;
+    background: #FF7010;
+    border-radius: 6px;
+    color: #FFF;
+    font-size: 16px;
+}
+
+/* ========== POKUPKI ====================*/
+
+.pokupki-box .zakaz-box{
+    width: 100%;
+    border: 1px solid #F0F0F0;
+    background: #fff;
+    border-radius: 12px;
+    margin: 10px 10px 50px 10px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    position: relative;
+}
+.pokupki-box .zakaz-box .new{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 35px;
+    height: 22px;
+    padding: 4px 5px;
+    font-size: 10px;
+}
+.pokupki-box .zakaz-box .hit{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 35px;
+    height: 22px;
+    padding: 4px 5px;
+    font-size: 10px;
+}
+.pokupki-box .zakaz-box .img-box{
+    width: 150px;
+}
+.pokupki-box .zakaz-box .img-box img{
+    width: 150px;
+    
+}
+.pokupki-box .zakaz-box .zakaz-info{
+    padding: 10px;
+}
+.pokupki-box .zakaz-box .zakaz-info h4{
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 20px;
+}
+.pokupki-box .zakaz-box .zakaz-info p{
+    font-size: 14px;
+}
+.pokupki-box .zakaz-box .zakaz-info .info-chek{
+   display: none;
+}
+
+.pokupki-box .zakaz-info .schet{
+    opacity: 0;
+    
+}
+.pokupki-box .schet{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   position: absolute;
+   top: 150px;
+   right: 50px;
+   left: 150px;
+}
+.pokupki-box .schet .chet-btn{
+    width: 92px;
+    height: 36px;
+    background: #FFEEE2;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.pokupki-box .schet .chet-btn span{
+    font-size: 16px;
+    font-weight: 600;
+    color: #FF7010;
+}
+.pokupki-box .schet p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #FF7010;
+}
+ 
+
+
+
+
+
+
+/* =============================================== */
+
+
+@media(max-width:1300px){
+    .container{
+        padding: 20px 3%;
+    }
+}
+
+
+
+@media(max-width:1100px){
+    .nav-top{
+        width: 100%;
+       justify-content: space-between;
+       gap: 5px;
+    }
+    .nav-top p:nth-of-type(2){
+        display: none;
+    }
+    .nav-time{
+        display: none;
+    }
+
+    .navbar .logotip{
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        position: absolute;
+        top: 1100%;
+        right: 10%;
+        box-shadow: 0 0 15px #FF7010;
+        
+    }
+    .navbar .logotip a{
+        display: none;
+    }
+    .navbar .logotip button{
+        display: block;
+        border: none;
+        background: none;
+        font-size: 24px;
+        color: #fff;
+        padding: 6px 0px;
+        position: relative;
+    }
+    .navbar .logotip button span{
+        position: absolute;
+        top: -18px;
+        right: -15px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: #fff;
+        border: 1px solid #FF7010;
+        color: #FF7010;
+        font-size: 16px;
+    }
+    .items{
+        display: none;
+    }
+    .bars{
+        display: block;
+    }
+   
+    .hero .hero-menu{
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
+    
+    .hero .hero-menu div{
+        display: flex;
+        gap: 10px;
+    }
+    .pic-menu{
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
+    .proverit div{
+        width: 100%;
+        height: 150px;
+        position: relative;
+    }
+    .proverit div p{
+        position: absolute;
+        top: 20px;
+        left: 100px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .proverit div span{
+        position: absolute;
+        left: 70px;
+        top: 80px;
+    }
+    .proverit button{
+        width: 50px;
+        height: 50px;
+        border: none;
+        background: #FF7010;
+        border-radius: 6px;
+        box-shadow: 0 0 10px #FF7010;
+        position: absolute;
+        right:70px;
+        top: 60px;
+    }
+    .proverit button span{
+        display: none;
+    }
+    .proverit button i{
+        display: block;
+        font-size: 24px;
+        color: #fff;
+        transform: rotate(45deg);
+    }
+    .footer-links{
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    /* ====== about ========================== */
+    .about div{
+        width: 80%;
+    }
+    .about div h2{
+        font-size: 24px;
+        font-weight: 800;
+    }
+    .about div h4{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .about div input{
+        width: 250px;
+    }
+    .about div a{
+        width: 250px;
+    }
+
+    /* ======== kod =========================== */
+    .kod div{
+        width: 80%;
+    }
+    .kod div h2{
+        font-size: 24px;
+        font-weight: 800;
+    }
+    .kod div p{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .kod div input{
+        width: 250px;
+    }
+    .vhod{
+        width: 250px;
+    }
+    .kod button{
+        width: 250px;
+    }
+
+
+
+
+
+}
+
+
+
+@media(max-width:700px){
+    h2{
+        font-size: 34px;
+    }
+    .zakaz-box{
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .zakaz-box .img-box{
+        width: 150px;
+    }
+    .zakaz-box .img-box img{
+        width: 150px;
+    }
+    .zakaz-box .zakaz-info{
+        width: 350px;
+    }
+    .zakaz-box .zakaz-info h4{
+        font-size: 16px;
+    }
+    .zakaz-box .zakaz-info p{
+        font-size: 14px;
+    }
+    .zakaz-box .zakaz-info .info-chek .vib-btn{
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .zakaz-box .zakaz-info .info-chek p{
+        font-size: 14px;
+    }
+    .dostavka div{
+        width: 90%;
+    }
+    
+
+    /* ==== shop-box ================================ */
+
+    .shop-box .pokupki{
+        width: 400px;
+    }
+    .pokupki .shop-logo{
+        width: 400px;
+    }
+    .pokupka-end{
+        width: 400px;
+    }
+    .pokupki-box .zakaz-box .img-box{
+        width: 120px;
+    }
+    .pokupki-box .zakaz-box .img-box img{
+        width: 120px;
+        
+    }
+    .pokupki-box .zakaz-box .zakaz-info h4{
+        font-size: 14px;
+        font-weight: 800;
+    }
+    .pokupki-box .zakaz-box .zakaz-info p{
+        font-size: 12px;
+    }
+    .pokupki-box .schet{
+       top: 130px;
+       right: 50px;
+       left: 100px;
+    }
+    .pokupki-box .schet .chet-btn{
+        width: 72px;
+        height: 30px;
+        background: #FFEEE2;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    .pokupki-box .schet .chet-btn span{
+        font-size: 14px;
+        font-weight: 800;
+    }
+    .pokupki-box .schet p{
+        font-size: 14px;
+        font-weight: 800;
+    }
+
+   /* allert */
+   .allert{
+     width: 300px;
+     height: 200px;
+     padding: 30px;
+   }
+
+
+
+
+}
+
+
+
+
+
+
